@@ -28,7 +28,7 @@ export const event = onEvent("messageCreate", (message) => {
                     .setTimestamp()
                     .setColor("RED");
                 channel.send({ embeds: [embed] });
-                message.member?.timeout(60, "Zakázané slovo.").then(() => {
+                message.member?.timeout(60000, "Zakázané slovo.").then(() => {
                     logger.info(
                         `User ${message.author.tag} was timed out for 60 seconds.`
                     );
