@@ -1,0 +1,12 @@
+{
+    "bot": {
+        "token": "",
+        "client_id": ""
+    },
+    "guild": "",
+    "banned_words": [
+        "discord.gg/[a-zA-Z0-9]+",
+        "discordapp.com/invite/[a-zA-Z0-9]+",
+        "discord.com/invite/[a-zA-Z0-9]+"
+    ]
+}
