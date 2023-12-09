@@ -8,5 +8,6 @@
         "discord.gg/[a-zA-Z0-9]+",
         "discordapp.com/invite/[a-zA-Z0-9]+",
         "discord.com/invite/[a-zA-Z0-9]+"
-    ]
+    ],
+    "photo_room": "1181897020718456852"
 }

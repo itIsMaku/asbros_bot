@@ -2,6 +2,8 @@ import logger from "./utils/logger";
 import { client } from "./app";
 import config from "../config.json";
 
+export let interval: any = undefined;
+
 export async function worker() {
     let guild = client.guilds.resolve(config.guild);
     if (guild == undefined || guild == null) {
@@ -9,7 +11,7 @@ export async function worker() {
         return;
     }
     logger.info("Worker | Worker is running.");
-    setInterval(() => {
+    interval = setInterval(() => {
         client.user?.setPresence({
             activities: [
                 {
@@ -19,5 +21,5 @@ export async function worker() {
             ],
             status: "idle",
         });
-    }, 1000);
+    }, 1000 * 60);
 }
